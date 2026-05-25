@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F5F7;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+body h1 {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    animation: aparecer 0.6s ease;
+}
+
+.iphones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    opacity: 0;
+    animation: aparecer 0.6s ease forwards;
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 380px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: all 0.2s ease;
+    margin: 0;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.card:nth-child(3)  {
+    animation-delay: 0.6s;
+}
+.card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.card:nth-child(5) {
+    animation-delay: 1.2s;
+}
+.card:nth-child(6) {
+    animation-delay: 1.4s;
+}
+.card:nth-child(7) {
+    animation-delay: 1.6s;
+}
+.card:nth-child(8) {
+    animation-delay: 1.8s;
+}
+
+.card:nth-child(9) {
+    animation-delay: 2s;
+}
+
+.card:nth-child(10) {
+    animation-delay: 2.2s;
+}
+.card:nth-child(11) {
+    animation-delay: 2.4s;
+}
+
+.card h3 {
+    color: #1D1D1F;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #6E6E73;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #1d1d1f;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 15px 0;  
+}
+
+.zapchamar {
+    transition: all 0.2s ease;
+    background: #0071e3;;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 980px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 500;
+    margin-top: auto;
+}
+
+.zapchamar:hover {
+    background: #0077ed;
+    transform: scale(1.02);
+    box-shadow: 0px 5px 5px #0077ed;
+}
+.zapchamar:active {
+    transform: scale(0.97);
+}
+
+@keyframes aparecer {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.fotoiphone {
+    width: auto;
+    height: 160px;
+    margin: 0 auto 20px auto;
+    display: block;
+    object-fit: contain;
+    transition: all 0.2s ease;
+}
+.fotoiphone:hover {
+    transform: scale(1.05);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    animation: aparecer 0.6s ease forwards; 
+    margin-left: -10px;
+    height: 400px;
+    width: 575px;
+    display: inline-block;
+    mix-blend-mode: multiply;
+}
+
+/* CORREÇÃO FORÇADA - VAI POR CIMA DE TUDO */
+@media (max-width: 768px) {
+    body, html {
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    body h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .logo-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 15px;
+    }
+    .logo {
+        height: 300px;
+        width: 400px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .iphones {
+        padding: 0 20px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        margin: 0 0 20px 0 !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+    }
+}
+
+.titulo-secao {
+    font-size: 32px;
+    color: black;
+    margin: 60px auto 30px auto;
+    text-align: center;
+    animation: aparecer 0.6s ease;
+    width: 100%;
+}
+
+footer {
+    margin-top: 30px;
+    font-weight: 500;
+}
